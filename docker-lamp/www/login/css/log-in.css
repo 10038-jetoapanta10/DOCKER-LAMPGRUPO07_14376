@@ -1,0 +1,100 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#2faField {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 15px;
+}
+
+#2faField.active {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.btn-toggle {
+    background-color: rgb(170, 2, 247);
+    /* Color predeterminado para el estado desactivado */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-toggle.active {
+    background-color: orangered;
+    /* Color cuando está activado */
+}
+
+.login-message {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.toggle-switch {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #ddd;
+    position: relative;
+    cursor: pointer;
+  }
+  
+
+.toggle-switch .slider {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #2faEnabled:checked + .toggle-switch .slider {
+    transform: translateX(25px);
+  }
+  
+  /* Agrega estilos para el botón reojonaranja */
+.btn-reojonaranja {
+    background-color: #ff4500; /* Color rojo anaranjado (puedes ajustar este valor según tu preferencia) */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Cambia el color cuando el mouse está sobre el botón */
+.btn-reojonaranja:hover {
+    background-color: #cc3700; /* Color rojo anaranjado más oscuro al pasar el mouse */
+}

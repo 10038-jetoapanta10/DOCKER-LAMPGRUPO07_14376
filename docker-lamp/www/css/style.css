@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+/* Calendario */
+.calendario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dia {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.disponible {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.ocupado {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.seleccionado {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Nuevos estilos para horas */
+.horas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.titulo-horas {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hora {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333; /* Color de texto por defecto */
+}
+
+.hora.ocupada {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.hora:hover {
+    background-color: #45a049;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
